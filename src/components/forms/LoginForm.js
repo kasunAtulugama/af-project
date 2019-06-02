@@ -62,6 +62,17 @@ class LoginForm extends React.Component{
                         value={data.password}
                         onChange={this.onChange}
                     />
+
+                    <Form.Field error={!!errors.password}>
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Make it secure"
+                        value={data.password}
+                        onChange={this.onChange}
+                    />
                 {errors.password && <InlineError text={errors.password}/>}
                 </Form.Field>
                 <Button primary>Login</Button>
