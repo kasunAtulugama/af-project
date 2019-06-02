@@ -4,7 +4,7 @@ import Validator from 'validator';
 import PropTypes from 'prop-types';
 import InlineError from '../messages/InlineError';
 import isEmail from 'validator/lib/isEmail';
-
+//test
 class LoginForm extends React.Component{
     state = {
         data: {
