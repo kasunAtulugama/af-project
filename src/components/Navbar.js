@@ -14,7 +14,7 @@ function Navbar() {
         <div className="container-fluid mt-4 mb-5">
             <div className="row">
                 <div className="col-6">
-                    <a className="navbar-brand ml-5" href="#"><img src={logo} style={{ width:'45px' }}/> </a>
+                    <a className="navbar-brand ml-5" href="#"><img src={logo} style={{ width:'35px' }}/> </a>
                 </div>
                 {/*input username field*/}
                 <div className="input-group col-3 mb-3">
