@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { Jumbotron, Row, Col, Image, Button } from 'react-bootstrap';
 import './Home.css';
 
-const Home = () => (
+const Login = () => (
     <div>
-        <h1>Home working</h1>
-        <Link to="/login">Login</Link>
+        <h1>Login working</h1>
     </div>
 );
 
-export default Home;
+export default Login;
