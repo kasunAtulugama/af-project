@@ -1,19 +1,15 @@
 import React from 'react';
-import './App.css';
+import { Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-import caro from './components/HomeCarousel';
+import Home from "./components/Home";
+import Login from "./components/Login";
 
-function App() {
-  return (
-      <div>
-          <Navbar />
-          <div>
-              <caro/>
-          </div>
-      </div>
 
-  );
-}
+const App = () =>
+    <div className="ui container">
+        <Route path="/" exact component={Home}/>
+        <Route path="/login" exact component={Login}/>
+    </div>;
 
 export default App;
