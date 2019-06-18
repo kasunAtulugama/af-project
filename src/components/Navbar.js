@@ -6,6 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faKey } from '@fortawesome/free-solid-svg-icons'
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 
 
@@ -44,10 +45,14 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link text-white text-uppercase ml-5" href="#">Home <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link text-white text-uppercase ml-5" to="/">Home<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white text-uppercase ml-5" href="#">Link</a>
+                            <Link className="nav-link text-white text-uppercase ml-5" to="/login">Login</Link>
+                        </li>
+                        {/*create admin sign up nav*/}
+                        <li className="nav-item">
+                            <Link className="nav-link text-white text-uppercase ml-5" to="/admin_sign_up">Sign up</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white text-uppercase ml-5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
