@@ -54,6 +54,9 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link text-white text-uppercase ml-5" to="/admin_sign_up">Sign up</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white text-uppercase ml-5" to="/add_course">Add courses</Link>
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white text-uppercase ml-5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from "./components/Home";
 import Login from "./components/Login";
 import AdminSignupForm from "./components/forms/AdminSignupForm";
+import CoursesAddingForm from "./components/forms/CoursesAddingForm";
 
 
 const App = () =>
@@ -12,6 +13,7 @@ const App = () =>
         <Route path="/" exact component={Home}/>
         <Route path="/login" exact component={Login}/>
         <Route path="/admin_sign_up" exact component={AdminSignupForm}/>
+        <Route path="/add_course" exact component={CoursesAddingForm}/>
     </div>;
 
 export default App;
