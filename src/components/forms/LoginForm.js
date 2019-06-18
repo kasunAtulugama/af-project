@@ -62,7 +62,7 @@ class LoginForm extends React.Component{
                         value={data.password}
                         onChange={this.onChange}
                     />
-
+                </Form.Field>
                     <Form.Field error={!!errors.password}>
                     <label htmlFor="password">Password</label>
                     <input
