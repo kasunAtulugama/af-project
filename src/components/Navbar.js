@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../sliit.png';
-import { homeCarousel } from './HomeCarousel'
+// import { homeCarousel } from './HomeCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faKey } from '@fortawesome/free-solid-svg-icons'
@@ -47,17 +47,17 @@ function Navbar() {
                         <li className="nav-item active">
                             <Link className="nav-link text-white text-uppercase ml-5" to="/">Home<span className="sr-only">(current)</span></Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white text-uppercase ml-5" to="/login">Login</Link>
-                        </li>
-                        {/*create admin sign up nav*/}
-                        <li className="nav-item">
-                            <Link className="nav-link text-white text-uppercase ml-5" to="/admin_sign_up">Sign up</Link>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                            {/*<Link className="nav-link text-white text-uppercase ml-5" to="/login">Login</Link>*/}
+                        {/*</li>*/}
+                        {/*/!*create admin sign up nav*!/*/}
+                        {/*<li className="nav-item">*/}
+                            {/*<Link className="nav-link text-white text-uppercase ml-5" to="/admin_sign_up">Sign up</Link>*/}
+                        {/*</li>*/}
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white text-uppercase ml-5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
+                                My Courses
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item text-white text-uppercase" href="#">Action</a>
@@ -66,9 +66,9 @@ function Navbar() {
                                 <a className="dropdown-item text-white text-uppercase" href="#">Something else here</a>
                             </div>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-white text-uppercase ml-lg-5 disabled" href="#">Disabled</a>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                            {/*<a className="nav-link text-white text-uppercase ml-lg-5 disabled" href="#">Disabled</a>*/}
+                        {/*</li>*/}
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
                         <input className="form-control mr-sm-2" type="search" placeholder="Search Course..." aria-label="Search"/>
@@ -76,7 +76,7 @@ function Navbar() {
                     </form>
                 </div>
                 </nav>
-                <homeCarousel/>
+                {/*<homeCarousel/>*/}
             </div>
         </div>
     )
