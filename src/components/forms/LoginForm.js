@@ -4,7 +4,7 @@ import Validator from 'validator';
 import PropTypes from 'prop-types';
 import InlineError from '../messages/InlineError';
 import isEmail from 'validator/lib/isEmail';
-
+//test
 class LoginForm extends React.Component{
     state = {
         data: {
@@ -53,6 +53,17 @@ class LoginForm extends React.Component{
                     {errors.email && <InlineError text={errors.email}/>}
                 </Form.Field>
                 <Form.Field error={!!errors.password}>
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Make it secure"
+                        value={data.password}
+                        onChange={this.onChange}
+                    />
+
+                    <Form.Field error={!!errors.password}>
                     <label htmlFor="password">Password</label>
                     <input
                         type="password"
