@@ -3,8 +3,10 @@ import { Form, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import InlineError from '../messages/InlineError';
 import isEmail from 'validator/lib/isEmail';
+import axios from "axios";
 
 class InstructorAddingForm extends React.Component{
+
     state = {
         data: {
             role: 'instructor',
@@ -41,7 +43,22 @@ class InstructorAddingForm extends React.Component{
         if (!data.instructor_address) errors.instructor_address = "Can't be empty";
         return errors;
     };
+    componentDidMount() {
 
+        let url=window.location.href;
+        let cid=(url.split('?')[1]);
+        let requestUrl = "http://localhost:4000/instructor";
+        if (cid != null){
+            requestUrl = "http://localhost:4000/instructor/"+cid;
+        }
+        axios.get(requestUrl).then(response=>{
+            console.log(response.data);
+            this.setState({data:response.data});
+
+        }).catch(err=>{
+            console.log(err);
+        });
+    }
     render() {
         const { data, errors } = this.state;
 
@@ -105,7 +122,7 @@ class InstructorAddingForm extends React.Component{
                     />
                     {errors.instructor_password && <InlineError text={errors.instructor_password}/>}
                 </Form.Field>
-                <Button primary>Sign up</Button>
+                <Button primary>Insert</Button>
             </Form>
         );
     }
