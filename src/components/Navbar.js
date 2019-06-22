@@ -47,9 +47,9 @@ function Navbar() {
                         <li className="nav-item active">
                             <Link className="nav-link text-white text-uppercase ml-5" to="/">Home<span className="sr-only">(current)</span></Link>
                         </li>
-                        {/*<li className="nav-item">*/}
-                            {/*<Link className="nav-link text-white text-uppercase ml-5" to="/login">Login</Link>*/}
-                        {/*</li>*/}
+                        <li className="nav-item">
+                            <Link className="nav-link text-white text-uppercase ml-5" to="/studentDash">Student Dashboard</Link>
+                        </li>
                         {/*/!*create admin sign up nav*!/*/}
                         {/*<li className="nav-item">*/}
                             {/*<Link className="nav-link text-white text-uppercase ml-5" to="/admin_sign_up">Sign up</Link>*/}
